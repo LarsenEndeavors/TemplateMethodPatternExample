@@ -1,12 +1,14 @@
 ﻿using System;
+using TemplateMethodPatternExample.Objects;
 
 namespace TemplateMethodPatternExample
 {
-    class Program
+    internal static class TemplateMethodPatternExample
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine("Hello World!");
+            AbstractClass template = new ConcreteClass();
+            template.ConcreteMethod();
         }
     }
 }
